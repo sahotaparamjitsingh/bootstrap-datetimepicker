@@ -6,18 +6,18 @@ Simple date/time picker component based on the work of Stefan Petre  [original c
 
 These are the default options for initializing the widget:
 
-*  autoClose: false,          // closes the datetimepicker
-*  maskInput: true,           // disables the text input mask
-*  pickDate: true,            // disables the date picker
-*  pickTime: true,            // disables de time picker
-*  pick12HourFormat: false,   // enables the 12-hour format time picker
-*  pickSeconds: true,         // disables seconds in the time picker
-*  startDate: -Infinity,      // set a minimum date
-*  endDate: Infinity          // set a maximum date
-*  collapse: true,
-*  calendarWeeks: false,
-*  todayBtn: false,
-*  doneBtn: false,
+*  `autoClose: false,          `// closes the datetimepicker
+*  `maskInput: true,`           // disables the text input mask
+*  `pickDate: true,`            // disables the date picker
+*  `pickTime: true,`            // disables de time picker
+*  `pick12HourFormat: false,`   // enables the 12-hour format time picker
+*  `pickSeconds: true,`         // disables seconds in the time picker
+*  `startDate: -Infinity,`      // set a minimum date
+*  `endDate: Infinity`          // set a maximum date
+*  `collapse: true,`
+*  `calendarWeeks: false,`
+*  `todayBtn: false,`
+*  `doneBtn: false,`
   
 
 # API
@@ -49,6 +49,8 @@ el.on('changeDate', function(e) {
 
   
 # Complete sample markup
+
+
 
 Copy and paste the following code in a file(eg: test.html) and it should produce a widget similar to the first demo:
 
