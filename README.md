@@ -33,7 +33,7 @@ picker.setDate(new Date(Date.UTC(1998, 10, 11, 4, 30))); // input === 1998-10-11
 
 The date value can be unset by passing ‘null’ to any of the ‘set’ methods or by erasing the input:
 <pre><code>
-var picker = $('#datetimepicker'l).data('datetimepicker');
+var picker = $('#datetimepicker').data('datetimepicker');
 picker.setLocalDate(null);
 // or
 picker.setDate(null);
@@ -41,10 +41,50 @@ picker.setDate(null);
 input.val('');
 input.change();</pre></code>
 The only event exposed is ‘changeDate’, which will expose ‘date’ and ‘localDate’ properties on the event object:
-
+<pre><code>
 el.on('changeDate', function(e) {
   console.log(e.date.toString());
   console.log(e.localDate.toString());
-});
+});</pre></code>
 
   
+# Complete sample markup
+
+Copy and paste the following code in a file(eg: test.html) and it should produce a widget similar to the first demo:
+
+<pre><code class='html'>
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen"
+     href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
+  </head>
+  <body>
+    <div id="datetimepicker" class="input-append date">
+      <input type="text"></input>
+      <span class="add-on">
+        <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+      </span>
+    </div>
+    <script type="text/javascript"
+     src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+    </script> 
+    <script type="text/javascript"
+     src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js">
+    </script>
+    <script type="text/javascript"
+     src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">
+    </script>
+    <script type="text/javascript"
+     src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-BR.js">
+    </script>
+    <script type="text/javascript">
+      $('#datetimepicker').datetimepicker({
+        format: 'dd/MM/yyyy hh:mm:ss',
+        language: 'pt-BR'
+      });
+    </script>
+  </body>
+<html>
+</code></pre>
