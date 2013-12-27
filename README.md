@@ -53,33 +53,32 @@ el.on('changeDate', function(e) {
 
 
 Copy and paste the following code in a file(eg: test.html) and it should produce a widget similar to the first demo:
-
-<pre><code class='html'>
+```
 <!DOCTYPE HTML>
 <html>
   <head>
-    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen"
-     href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
+     href="https://raw.github.com/sahotaparamjitsingh/bootstrap-datetimepicker/master/build/css/bootstrap-datetimepicker.min.css">
   </head>
   <body>
-    <div id="datetimepicker" class="input-append date">
-      <input type="text"></input>
-      <span class="add-on">
-        <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
-      </span>
-    </div>
+  <div class="well">
+  	<div id="datetimepicker" class="input-group date">
+  	  <input type="text" class="form-control">
+  	  <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+  	</div>
+  </div>
     <script type="text/javascript"
-     src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+     src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js">
     </script> 
     <script type="text/javascript"
-     src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js">
+     src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js">
     </script>
     <script type="text/javascript"
-     src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">
+     src="https://github.com/sahotaparamjitsingh/bootstrap-datetimepicker/blob/master/src/js/bootstrap-datetimepicker.js">
     </script>
     <script type="text/javascript"
-     src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-BR.js">
+     src="https://raw.github.com/sahotaparamjitsingh/bootstrap-datetimepicker/master/src/js/locales/bootstrap-datetimepicker.pt-BR.js">
     </script>
     <script type="text/javascript">
       $('#datetimepicker').datetimepicker({
@@ -89,4 +88,4 @@ Copy and paste the following code in a file(eg: test.html) and it should produce
     </script>
   </body>
 <html>
-</code></pre>
+```
