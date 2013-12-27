@@ -1,6 +1,27 @@
-Forked from http://tarruda.github.com/bootstrap-datetimepicker/.
+# bootstrap-datepicker
 
-API
+Simple date/time picker component based on the work of Stefan Petre  [original code](http://www.eyecon.ro/bootstrap-datepicker/); with contributions taken from Andrew Rowls and jdewit.
+
+# Options
+
+These are the default options for initializing the widget:
+
+*  autoClose: false,          // closes the datetimepicker
+*  maskInput: true,           // disables the text input mask
+*  pickDate: true,            // disables the date picker
+*  pickTime: true,            // disables de time picker
+*  pick12HourFormat: false,   // enables the 12-hour format time picker
+*  pickSeconds: true,         // disables seconds in the time picker
+*  startDate: -Infinity,      // set a minimum date
+*  endDate: Infinity          // set a maximum date
+*  collapse: true,
+*  calendarWeeks: false,
+*  todayBtn: false,
+*  doneBtn: false,
+  
+
+# API
+
 The widget class provides 4 methods to manipulate dates: ‘getDate’/’setDate’ for working with UTC and ‘getLocalDate’/’setLocalDate’ for working with local dates:
 
 // Considering you are on a GMT-3 timezone and the input contains '2000-01-17 10:00'
@@ -25,20 +46,4 @@ el.on('changeDate', function(e) {
   console.log(e.localDate.toString());
 });
 
-Options
-
-These are the default options for initializing the widget:
-
-  autoClose: false,          // closes the datetimepicker
-  maskInput: true,           // disables the text input mask
-  pickDate: true,            // disables the date picker
-  pickTime: true,            // disables de time picker
-  pick12HourFormat: false,   // enables the 12-hour format time picker
-  pickSeconds: true,         // disables seconds in the time picker
-  startDate: -Infinity,      // set a minimum date
-  endDate: Infinity          // set a maximum date
-  collapse: true,
-  calendarWeeks: false,
-  todayBtn: false,
-  doneBtn: false,
   
